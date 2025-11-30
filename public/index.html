@@ -127,7 +127,7 @@
     }
 
     function renderTodos() {
-        // need to add filtering logic in here
+        
 
         updateNavCount()
         updateHeaderText()
@@ -162,7 +162,7 @@
         main.innerHTML = todoList
     }
 
-    // showDashboard()
+    
 
     // AUTH LOGIC
 
@@ -179,7 +179,7 @@
         const emailVal = email.value
         const passVal = password.value
 
-        // guard clauses... if authenticating, return
+        
         if (
             isLoading ||
             isAuthenticating ||
@@ -243,7 +243,7 @@
     }
 
     function logout() {
-        // wipe states and clear cached token
+        
     }
 
     // CRUD LOGIC
@@ -305,11 +305,7 @@
     // UTILITY FUNCTIONS
 
 
-    // load page and read local storage for key
-
-    // default to login screen
-
-    // if is authenticated, show todo app
+    
     if (token) {
         async function run() {
             await fetchTodos()
